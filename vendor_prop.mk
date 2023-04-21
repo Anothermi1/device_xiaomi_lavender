@@ -287,3 +287,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # UI
 sys.use_fifo_ui=1
+
+# Blur
+ro.launcher.blur.appLaunch=0
+ro.surface_flinger.supports_background_blur=0
+ro.sf.blurs_are_expensive=0
+
