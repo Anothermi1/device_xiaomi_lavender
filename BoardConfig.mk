@@ -59,6 +59,9 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
+TARGET_KERNEL_CLANG_VERSION := clang-r353983
+TARGET_CLANG_PREBUILTS_VERSION := clang-r353983
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r353983
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # ANT+
