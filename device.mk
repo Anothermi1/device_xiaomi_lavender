@@ -347,6 +347,12 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+    
+PRODUCT_PACKAGES += \
+   android.frameworks.sensorservice@1.0.vendor \
+   android.hardware.camera.provider@2.4-impl \
+   android.hardware.camera.provider@2.4-service_64 \
+   vendor.qti.hardware.camera.device@1.0.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -474,4 +480,3 @@ PRODUCT_PACKAGES += \
     
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
-
