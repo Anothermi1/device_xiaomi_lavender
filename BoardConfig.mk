@@ -122,6 +122,10 @@ TARGET_SCREEN_DENSITY := 420
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_lavender
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lavender
+
 # DT2W
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
