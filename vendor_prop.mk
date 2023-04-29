@@ -112,7 +112,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.privapp.list=org.codeaurora.snapcam \
     persist.sys.camera.camera2=true \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
     persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.isp.clock.optmz=0 \
     persist.vendor.camera.isp.turbo=1 \
@@ -260,7 +259,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000 \
-    debug.sf.enable_gl_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1
@@ -284,12 +282,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
-
-# UI
-sys.use_fifo_ui=1
-
-# Blur
-ro.launcher.blur.appLaunch=0
-ro.surface_flinger.supports_background_blur=0
-ro.sf.blurs_are_expensive=0
-

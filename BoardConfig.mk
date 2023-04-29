@@ -208,5 +208,7 @@ WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
