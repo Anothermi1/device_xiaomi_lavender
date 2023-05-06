@@ -13,18 +13,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common rr stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
-BUILD_RR_WALLPAPERS := true
+
 # Pixel-charging
 USE_PIXEL_CHARGING := true
-TARGET_USES_BLUR := false
-TARGET_WITH_BLUR := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_lavender
+PRODUCT_NAME := lineage_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
