@@ -13,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from lavender device
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
-# Inherit some common CorvusOS stuff.
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common Nad stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 # Pixel-charging
 USE_PIXEL_CHARGING := true
@@ -22,7 +22,7 @@ TARGET_USES_BLUR := false
 TARGET_WITH_BLUR := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ancient_lavender
+PRODUCT_NAME := nad_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
