@@ -10,11 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+BANANA_BUILDTYPE := UNOFFICIAL
+GAPPS_VERSION := true
 
 # V4A
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
@@ -23,7 +26,7 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_lavender
+PRODUCT_NAME := banana_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
