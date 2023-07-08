@@ -44,11 +44,11 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
-TARGET_KERNEL_CONFIG := lavender-perf_defconfig
+TARGET_KERNEL_CONFIG := lavender_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := clang-r450784d
-TARGET_CLANG_PREBUILTS_VERSION := clang-r450784d
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r450784d
+TARGET_KERNEL_CLANG_VERSION := clang-proton
+TARGET_CLANG_PREBUILTS_VERSION := clang-proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
@@ -199,3 +199,5 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
+# Havoc-OS Props 
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/havoc.prop
